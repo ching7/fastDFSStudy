@@ -57,10 +57,10 @@ public class TestFastDfsUpload {
 
             //文件元信息
             NameValuePair[] metaList = new NameValuePair[1];
-            metaList[0] = new NameValuePair("fileName", "C:\\Users\\hspcadmin\\Desktop\\cat.jpg");
+            metaList[0] = new NameValuePair("fileName", "C:\\Users\\ching\\Desktop\\cat.png");
 
             //执行上传
-            String fileId = client.upload_file1("C:\\Users\\hspcadmin\\Desktop\\cat.jpg", "jpg", metaList);
+            String fileId = client.upload_file1("C:\\Users\\ching\\Desktop\\cat.png", "png", metaList);
             System.out.println("upload success. file id is: " + fileId);
 
             //文件下载
