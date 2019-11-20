@@ -48,11 +48,14 @@ public class FastDfsTest {
             StorageClient1 client = new StorageClient1(trackerServer, storageServer);
 
             //文件元信息
-            NameValuePair[] metaList = new NameValuePair[1];
+            /*NameValuePair[] metaList = new NameValuePair[1];
+            File file = new File("C:\\Users\\hspcadmin\\Desktop\\cat.jpg");
             metaList[0] = new NameValuePair("fileName", "C:\\Users\\hspcadmin\\Desktop\\cat.jpg");
-
+            metaList[1] = new NameValuePair("fileExtName", "jpg");
+            metaList[2] = new NameValuePair("fileLength", String.valueOf(file.length()));*/
             //执行上传
-            String fileId = client.upload_file1("C:\\Users\\hspcadmin\\Desktop\\cat.jpg", "jpg", metaList);
+            //String fileId = client.upload_file1("C:\\Users\\hspcadmin\\Desktop\\cat.jpg", "jpg", metaList);
+            String fileId = client.upload_file1("C:\\Users\\hspcadmin\\Desktop\\cat.jpg", "jpg",null);
             System.out.println("upload success. file id is: " + fileId);
 
             //关闭tracker服务
